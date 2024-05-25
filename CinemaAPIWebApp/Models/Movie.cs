@@ -4,6 +4,11 @@ namespace CinemaAPIWebApp.Models
 {
     public class Movie
     {
+        public Movie()
+        {
+            MovieGenres = new List<MovieGenre>();
+            Showtimes = new List<Showtime>();
+        }
         [Key]
         public int MovieID { get; set; }
         public string Title { get; set; }

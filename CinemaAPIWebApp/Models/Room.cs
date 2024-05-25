@@ -4,6 +4,10 @@ namespace CinemaAPIWebApp.Models
 {
     public class Room
     {
+        public Room()
+        {
+            Showtimes = new List<Showtime>();
+        }
         [Key]
         public int RoomID { get; set; }
         public string Name { get; set; }
